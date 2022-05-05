@@ -102,12 +102,17 @@
       "@commitlint/config-conventional"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tubbo/prisma-slug.git"
+  },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@jest/types": "^28.0.2",
     "@prisma/client": "^3.13.0",
     "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@swc/core": "^1.2.177",
     "@swc/jest": "^0.2.20",
     "@types/eslint": "^8",

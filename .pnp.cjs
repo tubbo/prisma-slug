@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/types", "npm:28.0.2"],\
             ["@prisma/client", "virtual:a75337d4cf9d99a647c226f60e609515ad72e51ae7c96dfc234e7313f25caaeff7873aa9591e557f134b9ce0370580253de8f5ebd1ad68018ef811cea1fff44e#npm:3.13.0"],\
             ["@semantic-release/changelog", "virtual:a75337d4cf9d99a647c226f60e609515ad72e51ae7c96dfc234e7313f25caaeff7873aa9591e557f134b9ce0370580253de8f5ebd1ad68018ef811cea1fff44e#npm:6.0.1"],\
+            ["@semantic-release/git", "virtual:a75337d4cf9d99a647c226f60e609515ad72e51ae7c96dfc234e7313f25caaeff7873aa9591e557f134b9ce0370580253de8f5ebd1ad68018ef811cea1fff44e#npm:10.0.1"],\
             ["@swc/core", "npm:1.2.177"],\
             ["@swc/jest", "virtual:a75337d4cf9d99a647c226f60e609515ad72e51ae7c96dfc234e7313f25caaeff7873aa9591e557f134b9ce0370580253de8f5ebd1ad68018ef811cea1fff44e#npm:0.2.20"],\
             ["@types/eslint", "npm:8.4.2"],\
@@ -1968,6 +1969,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@semantic-release-error-npm-3.0.0-238eebf38b-29c4391ecb.zip/node_modules/@semantic-release/error/",\
           "packageDependencies": [\
             ["@semantic-release/error", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@semantic-release/git", [\
+        ["npm:10.0.1", {\
+          "packageLocation": "./.yarn/cache/@semantic-release-git-npm-10.0.1-2fa2e024e6-b0a346acaf.zip/node_modules/@semantic-release/git/",\
+          "packageDependencies": [\
+            ["@semantic-release/git", "npm:10.0.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:a75337d4cf9d99a647c226f60e609515ad72e51ae7c96dfc234e7313f25caaeff7873aa9591e557f134b9ce0370580253de8f5ebd1ad68018ef811cea1fff44e#npm:10.0.1", {\
+          "packageLocation": "./.yarn/__virtual__/@semantic-release-git-virtual-205c306ee8/0/cache/@semantic-release-git-npm-10.0.1-2fa2e024e6-b0a346acaf.zip/node_modules/@semantic-release/git/",\
+          "packageDependencies": [\
+            ["@semantic-release/git", "virtual:a75337d4cf9d99a647c226f60e609515ad72e51ae7c96dfc234e7313f25caaeff7873aa9591e557f134b9ce0370580253de8f5ebd1ad68018ef811cea1fff44e#npm:10.0.1"],\
+            ["@semantic-release/error", "npm:3.0.0"],\
+            ["@types/semantic-release", null],\
+            ["aggregate-error", "npm:3.1.0"],\
+            ["debug", "virtual:d379f4b8bd5b10788d613996438ba1503c2ba18b925a21790a5a40942cd657dcf572a88a0a980313130bf3c5fa6d6ff2704cf7a8b4862f4830e1837c28f320c9#npm:4.3.4"],\
+            ["dir-glob", "npm:3.0.1"],\
+            ["execa", "npm:5.1.1"],\
+            ["lodash", "npm:4.17.21"],\
+            ["micromatch", "npm:4.0.5"],\
+            ["p-reduce", "npm:2.1.0"],\
+            ["semantic-release", "npm:19.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/semantic-release",\
+            "semantic-release"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7809,6 +7840,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/types", "npm:28.0.2"],\
             ["@prisma/client", "virtual:a75337d4cf9d99a647c226f60e609515ad72e51ae7c96dfc234e7313f25caaeff7873aa9591e557f134b9ce0370580253de8f5ebd1ad68018ef811cea1fff44e#npm:3.13.0"],\
             ["@semantic-release/changelog", "virtual:a75337d4cf9d99a647c226f60e609515ad72e51ae7c96dfc234e7313f25caaeff7873aa9591e557f134b9ce0370580253de8f5ebd1ad68018ef811cea1fff44e#npm:6.0.1"],\
+            ["@semantic-release/git", "virtual:a75337d4cf9d99a647c226f60e609515ad72e51ae7c96dfc234e7313f25caaeff7873aa9591e557f134b9ce0370580253de8f5ebd1ad68018ef811cea1fff44e#npm:10.0.1"],\
             ["@swc/core", "npm:1.2.177"],\
             ["@swc/jest", "virtual:a75337d4cf9d99a647c226f60e609515ad72e51ae7c96dfc234e7313f25caaeff7873aa9591e557f134b9ce0370580253de8f5ebd1ad68018ef811cea1fff44e#npm:0.2.20"],\
             ["@types/eslint", "npm:8.4.2"],\
