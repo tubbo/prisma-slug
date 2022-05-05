@@ -25,7 +25,7 @@ test('slugify custom field', () => {
   const middleware = PrismaSlug({
     source(data) {
       return data.title
-    }
+    },
   })
   const params: MiddlewareParams = {
     action: 'create' as PrismaAction,
@@ -47,7 +47,7 @@ test('use custom slugifier', () => {
   const middleware = PrismaSlug({
     slugify(value) {
       return `${value} Bat!`
-    }
+    },
   })
   const params: MiddlewareParams = {
     action: 'create' as PrismaAction,

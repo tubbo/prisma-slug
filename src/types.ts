@@ -61,5 +61,5 @@ export type MiddlewareParams<ModelName = string> = {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type Middleware<T = any> = (
   params: MiddlewareParams,
-  next: (params: MiddlewareParams) => Promise<T>,
+  next: (params: MiddlewareParams) => Promise<T>
 ) => Promise<T>

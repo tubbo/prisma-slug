@@ -14,7 +14,7 @@ export type PrismaSlugOptions = {
    * object.
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  source: (data: Record<string,any>) => string | Promise<string>
+  source: (data: Record<string, any>) => string | Promise<string>
 
   /**
    * The function that is used to generate the slug for a given
@@ -22,7 +22,10 @@ export type PrismaSlugOptions = {
    *
    * By default, this uses `slugify()`.
    */
-  slugify: (source: string, params: MiddlewareParams) => string | Promise<string>
+  slugify: (
+    source: string,
+    params: MiddlewareParams
+  ) => string | Promise<string>
 
   /**
    * Determine whether to generate a slug for this particular record. By
@@ -60,7 +63,7 @@ const DEFAULTS: PrismaSlugOptions = {
 
   onError(error) {
     console.error(error)
-  }
+  },
 }
 
 /**
@@ -70,13 +73,10 @@ const DEFAULTS: PrismaSlugOptions = {
  * @param options - Optional configuration for the middleware
  */
 export function PrismaSlug(options?: Partial<PrismaSlugOptions>): Middleware {
-  const {
-    source,
-    slugify,
-    willGenerate,
-    onError,
-    onDone,
-  } = { ...DEFAULTS, ...options }
+  const { source, slugify, willGenerate, onError, onDone } = {
+    ...DEFAULTS,
+    ...options,
+  }
 
   return async (params, next) => {
     if (willGenerate(params)) {
