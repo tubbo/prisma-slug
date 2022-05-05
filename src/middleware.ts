@@ -20,7 +20,7 @@ export type PrismaSlugOptions = {
    * The function that is used to generate the slug for a given
    * source string.
    *
-   * By default, this uses `slugify()`.
+   * By default, this uses the [slugify](https://npmjs.com/package/slugify) package.
    */
   slugify: (
     source: string,
