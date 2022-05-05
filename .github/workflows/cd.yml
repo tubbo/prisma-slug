@@ -18,7 +18,7 @@ jobs:
           persist-credentials: false
       - run: yarn build
       - run: yarn docs
-      - run: yarn release
+      - run: yarn publish
         env:
           GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

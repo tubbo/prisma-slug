@@ -1,7 +1,8 @@
 {
   "name": "prisma-slug",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "packageManager": "yarn@3.2.0",
   "scripts": {
@@ -12,7 +13,9 @@
     "check": "prettier --check .",
     "types": "tsc --noEmit",
     "build": "tsc",
-    "docs": "typedoc --out docs src/index.ts"
+    "docs": "typedoc --out docs src/index.ts",
+    "publish": "semantic-release",
+    "clean": "rm -rf dist"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
