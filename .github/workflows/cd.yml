@@ -1,0 +1,24 @@
+name: Release
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - next
+      - next-major
+      - beta
+      - alpha
+      - '*.*.x'
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      - run: yarn build
+      - run: yarn docs
+      - run: yarn release
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
