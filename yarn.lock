@@ -1314,6 +1314,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/client@npm:^3.13.0":
+  version: 3.13.0
+  resolution: "@prisma/client@npm:3.13.0"
+  dependencies:
+    "@prisma/engines-version": 3.13.0-17.efdf9b1183dddfd4258cd181a72125755215ab7b
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: 8c1e6c91208158b71684a9b03a27d8240315002340ca3ad5c298beaedf4ca29fda949e934a55e1f238ff215388c77348acf05f0cea7636f3236d66d6510d0c56
+  languageName: node
+  linkType: hard
+
+"@prisma/engines-version@npm:3.13.0-17.efdf9b1183dddfd4258cd181a72125755215ab7b":
+  version: 3.13.0-17.efdf9b1183dddfd4258cd181a72125755215ab7b
+  resolution: "@prisma/engines-version@npm:3.13.0-17.efdf9b1183dddfd4258cd181a72125755215ab7b"
+  checksum: 80238c778333eb0d9bc993e933cb83ed82488d53980d2cdc68ff25ef719de1a63ec05a32bb2af505115e4c179ea43389c8650c297c2f8dbda0c122e9c00197ee
+  languageName: node
+  linkType: hard
+
 "@semantic-release/changelog@npm:^6.0.1":
   version: 6.0.1
   resolution: "@semantic-release/changelog@npm:6.0.1"
@@ -1729,6 +1750,16 @@ __metadata:
   dependencies:
     "@types/istanbul-lib-report": "*"
   checksum: f1ad54bc68f37f60b30c7915886b92f86b847033e597f9b34f2415acdbe5ed742fa559a0a40050d74cdba3b6a63c342cac1f3a64dba5b68b66a6941f4abd7903
+  languageName: node
+  linkType: hard
+
+"@types/jest@npm:^27.5.0":
+  version: 27.5.0
+  resolution: "@types/jest@npm:27.5.0"
+  dependencies:
+    jest-matcher-utils: ^27.0.0
+    pretty-format: ^27.0.0
+  checksum: ca09ac3a17972e18683c57b681a6866c7a56c67f429810ece00425d948da62f207d271becb5cc759da3630f120596ec3c8e0ceb0eecefbe26daffba168b82879
   languageName: node
   linkType: hard
 
@@ -2989,6 +3020,13 @@ __metadata:
     asap: ^2.0.0
     wrappy: 1
   checksum: 895389c6aead740d2ab5da4d3466d20fa30f738010a4d3f4dcccc9fc645ca31c9d10b7e1804ae489b1eb02c7986f9f1f34ba132d409b043082a86d9a4e745624
+  languageName: node
+  linkType: hard
+
+"diff-sequences@npm:^27.5.1":
+  version: 27.5.1
+  resolution: "diff-sequences@npm:27.5.1"
+  checksum: a00db5554c9da7da225db2d2638d85f8e41124eccbd56cbaefb3b276dcbb1c1c2ad851c32defe2055a54a4806f030656cbf6638105fd6ce97bb87b90b32a33ca
   languageName: node
   linkType: hard
 
@@ -4381,6 +4419,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jest-diff@npm:^27.5.1":
+  version: 27.5.1
+  resolution: "jest-diff@npm:27.5.1"
+  dependencies:
+    chalk: ^4.0.0
+    diff-sequences: ^27.5.1
+    jest-get-type: ^27.5.1
+    pretty-format: ^27.5.1
+  checksum: 8be27c1e1ee57b2bb2bef9c0b233c19621b4c43d53a3c26e2c00a4e805eb4ea11fe1694a06a9fb0e80ffdcfdc0d2b1cb0b85920b3f5c892327ecd1e7bd96b865
+  languageName: node
+  linkType: hard
+
 "jest-diff@npm:^28.0.2":
   version: 28.0.2
   resolution: "jest-diff@npm:28.0.2"
@@ -4429,6 +4479,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jest-get-type@npm:^27.5.1":
+  version: 27.5.1
+  resolution: "jest-get-type@npm:27.5.1"
+  checksum: 63064ab70195c21007d897c1157bf88ff94a790824a10f8c890392e7d17eda9c3900513cb291ca1c8d5722cad79169764e9a1279f7c8a9c4cd6e9109ff04bbc0
+  languageName: node
+  linkType: hard
+
 "jest-get-type@npm:^28.0.2":
   version: 28.0.2
   resolution: "jest-get-type@npm:28.0.2"
@@ -4466,6 +4523,18 @@ __metadata:
     jest-get-type: ^28.0.2
     pretty-format: ^28.0.2
   checksum: 2e2e0a70304791bea961668d1864315583200a6acad004b2ab5688691397473d99dc932000006e71e0ba0c54a981a60eebcd5942d1d77e6ff9043a7c291b0167
+  languageName: node
+  linkType: hard
+
+"jest-matcher-utils@npm:^27.0.0":
+  version: 27.5.1
+  resolution: "jest-matcher-utils@npm:27.5.1"
+  dependencies:
+    chalk: ^4.0.0
+    jest-diff: ^27.5.1
+    jest-get-type: ^27.5.1
+    pretty-format: ^27.5.1
+  checksum: bb2135fc48889ff3fe73888f6cc7168ddab9de28b51b3148f820c89fdfd2effdcad005f18be67d0b9be80eda208ad47290f62f03d0a33f848db2dd0273c8217a
   languageName: node
   linkType: hard
 
@@ -6230,6 +6299,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pretty-format@npm:^27.0.0, pretty-format@npm:^27.5.1":
+  version: 27.5.1
+  resolution: "pretty-format@npm:27.5.1"
+  dependencies:
+    ansi-regex: ^5.0.1
+    ansi-styles: ^5.0.0
+    react-is: ^17.0.1
+  checksum: cf610cffcb793885d16f184a62162f2dd0df31642d9a18edf4ca298e909a8fe80bdbf556d5c9573992c102ce8bf948691da91bf9739bee0ffb6e79c8a8a6e088
+  languageName: node
+  linkType: hard
+
 "pretty-format@npm:^28.0.2":
   version: 28.0.2
   resolution: "pretty-format@npm:28.0.2"
@@ -6248,10 +6328,13 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.2.4
     "@commitlint/config-conventional": ^16.2.4
+    "@jest/types": ^28.0.2
+    "@prisma/client": ^3.13.0
     "@semantic-release/changelog": ^6.0.1
     "@swc/core": ^1.2.177
     "@swc/jest": ^0.2.20
     "@types/eslint": ^8
+    "@types/jest": ^27.5.0
     "@types/prettier": ^2
     "@typescript-eslint/eslint-plugin": ^5.22.0
     "@typescript-eslint/parser": ^5.22.0
@@ -6263,6 +6346,7 @@ __metadata:
     lint-staged: ^12.4.1
     prettier: ^2.6.2
     semantic-release: ^19.0.2
+    slugify: ^1.6.5
     typedoc: ^0.22.15
     typescript: ^4.6.4
   languageName: unknown
@@ -6380,6 +6464,13 @@ __metadata:
   bin:
     rc: ./cli.js
   checksum: 2e26e052f8be2abd64e6d1dabfbd7be03f80ec18ccbc49562d31f617d0015fbdbcf0f9eed30346ea6ab789e0fdfe4337f033f8016efdbee0df5354751842080e
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^17.0.1":
+  version: 17.0.2
+  resolution: "react-is@npm:17.0.2"
+  checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
   languageName: node
   linkType: hard
 
@@ -6862,6 +6953,13 @@ __metadata:
     ansi-styles: ^6.0.0
     is-fullwidth-code-point: ^4.0.0
   checksum: 7e600a2a55e333a21ef5214b987c8358fe28bfb03c2867ff2cbf919d62143d1812ac27b4297a077fdaf27a03da3678e49551c93e35f9498a3d90221908a1180e
+  languageName: node
+  linkType: hard
+
+"slugify@npm:^1.6.5":
+  version: 1.6.5
+  resolution: "slugify@npm:1.6.5"
+  checksum: a955a1b600201030f4c1daa9bb74a17d4402a0693fc40978bbd17e44e64fd72dad3bac4037422aa8aed55b5170edd57f3f4cd8f59ba331f5cf0f10f1a7795609
   languageName: node
   linkType: hard
 

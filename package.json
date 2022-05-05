@@ -102,10 +102,13 @@
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
+    "@jest/types": "^28.0.2",
+    "@prisma/client": "^3.13.0",
     "@semantic-release/changelog": "^6.0.1",
     "@swc/core": "^1.2.177",
     "@swc/jest": "^0.2.20",
     "@types/eslint": "^8",
+    "@types/jest": "^27.5.0",
     "@types/prettier": "^2",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
@@ -119,5 +122,8 @@
     "semantic-release": "^19.0.2",
     "typedoc": "^0.22.15",
     "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "slugify": "^1.6.5"
   }
 }
