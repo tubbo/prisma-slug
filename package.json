@@ -1,0 +1,11 @@
+{
+  "name": "prisma-slug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "yarn@3.2.0",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
