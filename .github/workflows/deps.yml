@@ -1,0 +1,17 @@
+name: Dependencies
+on:
+  push:
+    branches-ignore:
+      - main
+      - next
+      - next-major
+      - beta
+      - alpha
+      - '*.*.x'
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: yarn --immutable --immutable-cache --check-cache

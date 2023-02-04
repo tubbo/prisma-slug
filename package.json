@@ -1,28 +1,44 @@
 {
   "name": "prisma-slug",
   "version": "1.0.0-beta.1",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "license": "MIT",
   "packageManager": "yarn@3.2.0",
+  "type": "module",
+  "files": ["dist/**/*"],
+  "exports": {
+    "./": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": {
+      "require": "./dist/*.cjs",
+      "import": "./dist/*.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "tsup": {
+    "entry": ["src/index.ts", "src/middleware.ts", "src/types.ts"],
+    "format": ["cjs", "esm"],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "dts": true
+  },
   "scripts": {
     "prepare": "husky install",
     "test": "jest",
     "lint": "eslint .",
     "fmt": "prettier --write . && eslint --fix .",
     "check": "prettier --check .",
-    "types": "tsc --noEmit",
-    "build": "tsc",
+    "build": "tsup",
     "docs": "typedoc --out docs src/index.ts",
     "publish": "semantic-release",
     "clean": "rm -rf dist"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "jest",
-      "@typescript-eslint"
-    ],
+    "plugins": ["jest", "@typescript-eslint"],
     "extends": [
       "prettier",
       "eslint:recommended",
@@ -35,13 +51,8 @@
     "singleQuote": true
   },
   "lint-staged": {
-    "*.(j|t)sx?": [
-      "prettier --write",
-      "eslint --fix"
-    ],
-    "*.{json,yaml,yml,html,htm,css,md}": [
-      "prettier --write"
-    ]
+    "*.(j|t)sx?": ["prettier --write", "eslint --fix"],
+    "*.{json,yaml,yml,html,htm,css,md}": ["prettier --write"]
   },
   "release": {
     "branches": [
@@ -71,19 +82,13 @@
       [
         "@semantic-release/git",
         {
-          "assets": [
-            "docs",
-            "CHANGELOG.md",
-            "package.json"
-          ]
+          "assets": ["docs", "CHANGELOG.md", "package.json"]
         }
       ],
       [
         "@semantic-release/github",
         {
-          "assets": [
-            "pkg/*.tgz"
-          ]
+          "assets": ["pkg/*.tgz"]
         }
       ]
     ]
@@ -92,15 +97,10 @@
     "transform": {
       "^.+\\.(t|j)sx?$": "@swc/jest"
     },
-    "testPathIgnorePatterns": [
-      "dist",
-      ".yarn/unplugged"
-    ]
+    "testPathIgnorePatterns": ["dist", ".yarn/unplugged"]
   },
   "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
+    "extends": ["@commitlint/config-conventional"]
   },
   "repository": {
     "type": "git",
@@ -128,6 +128,7 @@
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "semantic-release": "^19.0.2",
+    "tsup": "^6.5.0",
     "typedoc": "^0.22.15",
     "typescript": "^4.6.4"
   },
